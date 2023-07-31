@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <style>
+    .button-biru{
+        background-color:#335AFF !important;
+        border-radius: 5px;
+        border: 1px solid #335AFF;
+        background: #FFF;
+        width: 113px;
+        height: 44.35px;
+    }
+    .button-putih{
+        background-color: #FFF;
+        border-radius: 5px;
+        border: 1px solid #335AFF;
+        width: 94px;
+        height: 42px;
+    }
+    h1{
+    color: #292929;
+    font-family: Nunito Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    }
+
+    .Platform{
+    color: #292929;
+    font-family: Nunito Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+    .tukar-sekarang{
+    width: 231px;
+    height: 60px;
+    border-radius: 10px;
+    background: #335AFF;
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+    .tekno{
+    color: #292929;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 281px;
+    }
+    .lihat-tekno{
+    color: #292929;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+    width: 182px;
+    }
+    .card-shadow{
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    box-shadow: 2px 3px 20px 0px rgba(0, 0, 0, 0.10);
+
+    }
+    .card-shadow-2{
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    box-shadow: 2px 3px 20px 0px rgba(0, 0, 0, 0.10);
+
+    }
+    .navbar{
+    background: #FFF;
+    border: 1px solid #E0E0E0;
+    }
+    .navbar-brand{
+        color: #335AFF;
+        font-family: Nunito Sans;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .bg-biru{
+        width: 100%;
+        height: 195px;
+        border-radius: 8px;
+        background: #335AFF;
+
+    }
+    .cari-barang{
+        color: #335AFE;
+        text-align: center;
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        width: 197px;
+        height: 60px;
+        border: 1px solid #335AFF
+        
+    }
+    .barter-barang{
+        border-radius: 8px;
+        background: #335AFF;
+        color: #FFF;
+        text-align: center;
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        width: 197px;
+        height: 60px;
+        border: 1px solid #E0E0E0;
+    }
+    .mt-10{
+        margin-top: 71px;
+
+    }
+    .pengin-ganti{
+        color: #FFF;
+        font-family: Nunito Sans;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .barterin{
+        color: #335AFF;
+        font-family: Nunito Sans;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .barterin-2{
+        color: #535353;
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150.04%; /* 27.007px */
+    }
+    .layanan{
+        color: #535353;
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150.04%; /* 27.007px */
+    }
+    .bantuan{
+        color: #535353;
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150.04%; /* 27.007px */
+    }
+    .no1{
+        color: #787878;
+        font-family: Nunito Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150.04%; /* 22.506px */
+    }
+    .Produk{
+      color: #050505;
+      font-family: Nunito Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+    }
+    .bold{
+      font-weight: 700;
+    }
+    .produk-saya{
+      color: #0A2A1D;
+      font-family: Nunito Sans;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .tmbh-produk{
+      color: #FFF;
+      font-family: Nunito Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      border-radius: 8px;
+      background: #335AFF;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      width: 193px;
+      height: 50px;
+    }
+    .btn-merah{
+      border-radius: 8px;
+      background: #FF1C1C;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      color: #FFF;
+      font-family: Nunito Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      width: 113px;
+      height: 44.35px;
+    }
+    .button-container {
+            text-align: center;
+            margin-top: 5px;
+        }
+    .button-container button {
+            margin: 3px;
+        }
+   </style>
+   <body>
+ 
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">Barterin</a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                &#9776;
+            </button>
+            <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><div class="input-group">
+                        <input class="form-control py-2" type="search" value="search" id="example-search-input" style="width: 450px;height: 5;">
+                        <span class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button">
+                              <i class="fa fa-search"></i>
+                          </button>
+                        </span>
+                  </div>
+                </li>
+                    
+                </ul>
+                <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+
+                    <li class="dropdown order-1">
+                        <a class="Produk mr-3" href="">Produk</a>
+                        <a class="Produk mr-3" href="">Pesanan</a>
+                        <a class="Produk mr-3 bold" href="">Ojan ajah</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="margin-top: 150px;">
+      
+    </div>
+    <div class="container">
+      <div class="row justify-content-between">
+         <h1 class="produk-saya">
+            Produk Saya
+        </h1>
+        
+        <button class="tmbh-produk">Tambah Produk</button>
+      </div>
+
+    
+      <div style="margin-top: 80px;">
+      
+      </div>
+
+      <table class="table">
+         <thead>
+           <tr>
+             <th scope="col">Gambar</th>
+             <th scope="col">Nama Produk</th>
+             <th scope="col">Perkiraan Harga</th>
+             <th scope="col">Preferensi Penukaran</th>
+             <th scope="col">Aksi</th>
+           </tr>
+         </thead>
+         <tbody class="table-group-divider">
+           <tr>
+             <th scope="row"><img width="134px" height="95.797px" src="./images/kamera.png" alt=""></th>
+             <td>
+              Kamera Canon A542 30123</td>
+             <td>Rp. 2.150.000</td>
+             <td>Kamera Analog
+               <img width="134px" height="95.797px" src="./images/kamera analog.png" alt="">
+             </td>
+             <td><div class="button-container">
+               <button class="button-biru">Edit</button>
+           </div>
+           <div class="button-container">
+               <button class="btn-merah">Hapus</button>
+           </div>
+               </td>
+           </tr>
+           <tr>
+             <th scope="row"><img width="158px" height="139px" src="./images/kaos 2.png" alt=""></th>
+             <td>Kaos Threesecond</td>
+             <td>RP.100.000</td>
+             <td>Baju muslim pria
+              <img width="131px" height="156px" src="./images/koko 3.png" alt="">
+             </td>
+             <td><div class="button-container">
+               <button class="button-biru">Edit</button>
+           </div>
+           <div class="button-container">
+               <button class="btn-merah">Hapus</button>
+           </div>
+             </td>
+
+           </tr>
+           <tr>
+             <th scope="row"><img width="175px" height="175px" src="./images/pisau daing 2.png" alt=""></th>
+             <td>Pisau Daging</td>
+             <td>Rp.150.000</td>
+             <td>Pisau Dapur
+              <img width="168px" height="107px" src="./images/pisau 1.png" alt="">
+             </td>
+             <td>
+              <div class="button-container">
+                <button class="button-biru">Edit</button>
+            </div>
+            <div class="button-container">
+                <button class="btn-merah">Hapus</button>
+            </div>
+             </td>
+             
+           </tr>
+           <tr>
+            <th scope="row"><img width="186px" height="186px" src="./images/asus a416 2.png" alt=""></th>
+            <td>Laptop Asus A416Jiao</td>
+            <td>Rp. 5.800.000</td>
+            <td>Laptop Acer Aspire
+             <img width="150px" height="150px" src="./images/acer 2.png" alt="">
+            </td>
+            <td><div class="button-container">
+              <button class="button-biru">Edit</button>
+          </div>
+          <div class="button-container">
+              <button class="btn-merah">Hapus</button>
+          </div>
+            </td>
+            <tr>
+              <th scope="row"><img width="108px" height="164px" src="./images/jenas 2.png" alt=""></th>
+              <td>Celana Jeans</td>
+              <td>Rp. 170.000</td>
+              <td>Celana Chinos
+               <img width="137px" height="150px" src="./images/chino 2.png" alt="">
+              </td>
+              <td><div class="button-container">
+                <button class="button-biru">Edit</button>
+            </div>
+            <div class="button-container">
+                <button class="btn-merah">Hapus</button>
+            </div>
+              </td>
+              <tr>
+                <th scope="row"><img width="154px" height="154px" src="./images/kompor 1 2.png" alt=""></th>
+                <td>kompor 1 tungku</td>
+                <td>Rp. 150.000</td>
+                <td>Kompor 2 tungku
+                 <img width="149px" height="157px" src="./images/2 kompor 2.png" alt="">
+                </td>
+                <td><div class="button-container">
+                  <button class="button-biru">Edit</button>
+              </div>
+              <div class="button-container">
+                  <button class="btn-merah">Hapus</button>
+              </div>
+                </td>
+         </tbody>
+       </table>
+ 
+
+    
+
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
